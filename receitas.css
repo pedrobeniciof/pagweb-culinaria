@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Roboto:wght@400;500;700;900&family=Rubik:wght@500;700&family=Work+Sans:wght@300;500;600;700;800;900&display=swap');
+
+:root{
+    --cor-principal: #ada695;
+    --cor--secundaria: #3f3725;
+    --cor-textos: rgb(224, 236, 245);
+    --cor-textos-secundario: #013f38;
+
+    --font-principal: 'Roboto', sans-serif;
+    --font_unipeblack: 'Work Sans', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--cor-principal);
+}
+main{
+    margin-bottom: 2rem;
+}
+
+/* MENUS DE NAVEGAÇÃO */
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(98, 97, 97);
+} 
+
+::-webkit-scrollbar-thumb{
+    border-radius: 40px;
+    width: 10px;
+    background-color: var(--cor-textos-secundario);
+}
+
+.container{
+    height: 100vh;
+    margin: 0px 250px;
+}
+
+.container_nav{
+    overflow: hidden;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--cor--secundaria);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    list-style: none;
+}
+
+/* FORMATAÇÃO DE TODOS OS TEXTOS DENTRO DE UMA LISTA */
+li > a {
+    letter-spacing: 2px;
+    font-family: var(--font-principal);
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--cor-textos);
+    text-decoration: none;
+    position: relative;
+}
+
+a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor-textos);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+
+}
+
+a:hover::after{
+    width: 100%;
+}
+.todasreceitas{
+    width: 74vw;
+}
+
+.receitas{
+    margin-top: 220rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.titulo__receitas{
+    font-family: 'Rubik', sans-serif;
+    align-items: flex-start;
+}
+
+.textoi__receitas{
+    color: var(--cor-textos-secundario);
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.subtitulo__receitas{
+    color: #444444;
+    font-weight: 400;
+}
+.conteudo__receitas{
+    width: 100%;
+    background-color: rgb(240, 242, 222);
+    border-radius: 15px;
+    box-shadow: 0px 2px 18px rgba(68, 80, 83, 0.153);
+
+}
+.titulo_conteudo_receitas{
+    padding: 10px;
+    color: var(--cor-textos-secundario);
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+#imagem__parmegiana{
+    background: url('https://supermercadosrondon.com.br/guiadecarnes/images/postagens/receita_simples_de_fil__parmegiana_2020-03-09.jpg') center/cover;
+    height: 300px;
+    width: 100%;
+}
+
+.ingredientes_titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0px;
+
+}
+
+.titulo_ingredientes_card{
+    text-align: center;
+    color: var(--cor-textos-secundario);
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.ingredientes__receitas{
+    gap: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* LINHHAS  */
+.linha{
+    display: flex;
+    justify-content: center;
+}
+#divisao{
+    height: 2px;
+    background-color: black;
+    width: 60vw;
+    border: none;
+}
+
+/* MODO DE PREPARO */
+
+.mododepreparo{
+    margin: 1rem 0px;
+    text-align: center;
+    color: var(--cor-textos-secundario);
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.preparo__sequencia{
+    margin: 1rem 10rem 1rem 14rem;
+}
+
+.container_listadepreparo{
+    padding: 1rem 0rem;
+}
+.listadepreparo > li{
+    margin: 1rem 0px;
+}
+
+/* CARDS IMAGEM */
+
+/* QUEIJO BRIE */
+
+#imagem__queijobrie{
+    background: url('https://onthelist.com.br/uploads/2017/03/2489c36959ee42cb.jpg') center/cover;
+    height: 300px;
+    width: 100%;
+}
+
+/* coquetelcamarao */
+
+#imagem__coquetelcamarao{
+    background: url('https://claudia.abril.com.br/wp-content/uploads/2020/01/coquetel-de-camarc3a3o-pistola-1.jpg') center/cover;
+    height: 300px;
+    width: 100%;
+}
+/* BRUSCHETTA */
+
+#imagem__bruschetta{
+    background: url('https://uaipeixes.com.br/userfiles/cache/thumbnails/1200/tn-b9bc4c635008acf3aab35c0360266bb7.jpg') center/cover;
+    height: 300px;
+    width: 100%;
+}
+
+/* RISOTO DE CAMARÃO  */
+
+#imagem__risotocamarao{
+    background: url('https://www.receitasedicasdochef.com.br/wp-content/uploads/2015/06/Delicioso-Risoto-de-Camarao.webp') center/cover;
+    height: 300px;
+    width: 100%;
+}
+
+/* PUDIM */
+
+#imagem__pudim{
+    background: url('https://www.sabornamesa.com.br/media/k2/items/cache/c53a9eb7f98bd9efe52407712806bfee_XL.jpg') center/cover;
+    height: 300px;
+    width: 100%;
+}
+
+/* PETIT GATEAU */
+
+#imagem__petit{
+    background: url('https://www.homeit.com.br/wp-content/uploads/2022/11/imagem_2022-11-01_151029781.png') center/cover;
+    height: 300px;
+    width: 100%;
+    
+}
+
+/* mousse maracujá */
+
+#imagem__maracuja{
+    background: url('https://static.itdg.com.br/images/1200-630/e1ceeccaac52a138e4ab2f9a125b533b/mousse-de-maracuja.jpg') center/cover;
+    height: 300px;
+    width: 100%;
+}
